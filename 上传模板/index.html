@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>File Upload widget a Flat Responsive Widget</title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="File Upload widget Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	</head>
+
+	<body>
+		<div class="agile-its">
+			<h2>数据文件上传</h2>
+			<div class="w3layouts">
+				<p>支持Excel文件</p>
+				<div class="photos-upload-view">
+					<form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+						<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+							<div class="agileinfo">
+							<input type="submit" class="choose" value="点击上传..">
+							<h3>OR</h3>
+								<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+								<div id="filedrag">文件拖拽区</div>
+							</div>
+					</form>
+					<div id="messages">
+						<p>上传状态</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<script src="js/filedrag.js"></script>
+			</div>
+		</div>
+	</body>
+	
+</html>

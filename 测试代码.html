@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="generator" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    
+    <script type="text/javascript">
+		function Food(name){
+			this.name = name;
+			this.eat = function(){
+			console.log('eat!')}
+		}
+		
+		function Vegetable(color){
+			this.color = color
+		}
+		Vegetable.prototype = new Food();
+		const tomato = new Vegetable('apple');
+		console.log(tomato.color)
+		console.log(tomato.eat())
+		tomato.eat()
+	</script>
+
+	<script>
+		function Parent(firstname){  
+			this.fname=firstname;  
+			this.age=40;  
+			this.sayAge=function()  {  
+			console.log(this.age);  
+			}  
+		}  
+		function Child(firstname){  
+			this.saySomeThing=function(){  
+				console.log(this.fname);  
+				this.sayAge();  
+			}  
+			this.getName=function(){  
+				return firstname;  
+			}  
+  
+		}  
+		var child=new Child("张");  
+		Parent.call(child,child.getName());  
+		child.saySomeThing();
+	</script>
+  </head>
+
+  <body>
+    
+  </body>
+
+</html>
